@@ -32,5 +32,23 @@ Java 7 Generics and Collections
 - Reduce the need for casting in collections
 - Are used heavily in Java collections API
 
+-- for example --
+ CacheString class  and CacheShirt class
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
 
  
