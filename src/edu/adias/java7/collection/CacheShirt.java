@@ -11,5 +11,4 @@ public class CacheShirt {
 	public Shirt get(){
 		return this.shirt;
 	}
-
 }
