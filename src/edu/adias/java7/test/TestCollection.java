@@ -33,19 +33,19 @@ public class TestCollection {
 		
 		List<Student> listStudent = new ArrayList<>();
 		
-		Student s1 = new Student();
+		Student s1 = Student.getStudentInstance();
 		s1.setId("ID100");
 		s1.setName("Name1");
 		s1.setDob(new Date());
-		s1.setAddress("ADDRESS");
+		s1.setAddressList(null);
 		
 		listStudent.add(s1);
 		
-		Student s2 = new Student();
+		Student s2 = Student.getStudentInstance();
 		s2.setId("ID100");
 		s2.setName("Name1");
 		s2.setDob(new Date());
-		s2.setAddress("ADDRESS");
+		s2.setAddressList(null);
 		listStudent.add(s2);
 		
 		for (Student student : listStudent) {
@@ -62,13 +62,6 @@ public class TestCollection {
 		for (String string : setStudent) {
 			System.out.println(string);
 		}
-		
-		
-		
-		
-		
-		
-		
 		
 	}
 

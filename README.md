@@ -137,6 +137,23 @@ HashSet	 SortedSet	    ArrayList	LinkedList
 		  <<class>>
 		  TreeSet		
  
+ 
+# Ordering Collections
+
+Collection API provides two interfaces to order collection
+
+The Comparable and Comparator interfaces are used to sort collections.
+both are implemented using generics
+- Using the Comparable interface 
+	- override the compareTo method
+	- which provides only one sort option
+
+- Using the Comparator interface 
+	- is implemented by the compare method
+	- Enables you to create multiple comparator classes
+	- Enables you to create numerous sorting options
+
+
 
 
 

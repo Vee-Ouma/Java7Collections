@@ -1,11 +1,26 @@
 package edu.adias.java7.test;
 
+import java.util.List;
+
 public class Student {
 	
 	private String id;
 	private String name;
 	private java.util.Date dob;
-	private String address;
+	private List<Address> addressList;
+	
+	private static Student student =null;
+	
+	private Student(){
+		super();
+	}
+	
+	public static synchronized Student getStudentInstance(){
+		if(student == null){
+			student = new Student();
+		}
+		return student;
+	}
 	
 	public String getId() {
 		return id;
@@ -25,16 +40,17 @@ public class Student {
 	public void setDob(java.util.Date dob) {
 		this.dob = dob;
 	}
-	public String getAddress() {
-		return address;
+	public List<Address> getAddressList() {
+		return addressList;
 	}
-	public void setAddress(String address) {
-		this.address = address;
+	public void setAddressList(List<Address> addressList) {
+		this.addressList = addressList;
 	}
+	
 	@Override
 	public String toString() {
 		return "Student [id=" + id + ", name=" + name + ", dob=" + dob
-				+ ", address=" + address + "]";
+				+ ", address=" + addressList + "]";
 	}
 	
 	
